@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>ツイートジェネレータ</title>
+</head>
+<body>
+    <canvas id="mycanvas" width="500" height="500">
+        canvas対応のブラウザを使ってください
+    </canvas>
+    
+    <textarea id="tweet-box" cols="30" rows="10"></textarea>
+    
+    <a id="download" href="" download="ssbbtus.png">画像ダウンロード</a>
+    
+    <form id="my-form">
+        <select name="title">
+	    </select>
+      
+        <textarea name="schedule"></textarea>
+       
+        <select name="background">
+            <option value="A">This is A</option>
+            <option value="./images/img1.png" selected>This is B</option>
+            <option value="C">This is C</option>
+	    </select>
+    </form>
+    {
+        title: "タイトル",
+        background: './images/img1.png',
+        schedule: "予定予定予定\nよていよてい\nyotei\n予定"
+    }
+    <script src="./scripts/jquery-2.1.3.min.js"></script>
+    <script src="./scripts/parser.js"></script>
+    <script src="./scripts/generator.js"></script>
+    <script src="./scripts/observer.js"></script>
+</body>
+</html>
